@@ -154,6 +154,12 @@ M.z = {
   { "zw", desc = "Mark word as bad/misspelling" },
   { "zx", desc = "Update folds" },
   { "zz", desc = "Center this line" },
+
+  { "zu", desc = "+Undo spelling commands" },
+  { "zug", desc = "Undo `zg`" },
+  { "zuG", desc = "Undo `zG`" },
+  { "zuw", desc = "Undo `zw`" },
+  { "zuW", desc = "Undo `zW`" },
 }
 
 M.nav = {
