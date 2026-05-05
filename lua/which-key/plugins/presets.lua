@@ -155,6 +155,9 @@ M.z = {
   { "zx", desc = "Update folds" },
   { "zz", desc = "Center this line" },
 
+  { "zj", desc = "Move to start of next fold" },
+  { "zk", desc = "Move to end of previous fold" },
+
   { "zu", desc = "+Undo spelling commands" },
   { "zug", desc = "Undo `zg`" },
   { "zuG", desc = "Undo `zG`" },
