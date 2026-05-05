@@ -192,6 +192,29 @@ M.g = {
   { "gx", desc = "Open file with system app" },
 }
 
+M.builtin_completion = {
+  preset = true,
+  mode = { "i" },
+
+  { "<C-x><C-d>", desc = "Defined identifiers" },
+  { "<C-x><C-e>", desc = "Scroll up" },
+  { "<C-x><C-f>", desc = "File names" },
+  { "<C-x><C-i>", desc = "Identifiers" },
+  { "<C-x><C-k>", desc = "Identifiers from dictionary" },
+  { "<C-x><C-l>", desc = "Whole lines" },
+  { "<C-x><C-n>", desc = "Next completion" },
+  { "<C-x><C-o>", desc = "Omni completion" },
+  { "<C-x><C-p>", desc = "Previous completion" },
+  { "<C-x><C-s>", desc = "Spelling suggestions" },
+  { "<C-x><C-t>", desc = "Identifiers from thesaurus" },
+  { "<C-x><C-y>", desc = "Scroll down" },
+  { "<C-x><C-u>", desc = "With 'completefunc'" },
+  { "<C-x><C-v>", desc = "Like in command line" },
+  { "<C-x><C-z>", desc = "Stop completion" },
+  { "<C-x><C-]>", desc = "Tags" },
+  { "<C-x>s", desc = "Spelling suggestions" },
+}
+
 function M.setup(opts)
   local wk = require("which-key")
 
@@ -211,7 +234,7 @@ function M.setup(opts)
   end
 
   -- Misc
-  for _, preset in pairs({ "windows", "nav", "z", "g" }) do
+  for _, preset in pairs({ "windows", "nav", "z", "g", "builtin_completion" }) do
     if opts[preset] ~= false then
       wk.add(M[preset])
     end
