@@ -158,8 +158,8 @@ M.z = {
   { "zj", desc = "Move to start of next fold" },
   { "zk", desc = "Move to end of previous fold" },
 
-  { "ZZ", desc = "close window :x" },
-  { "ZQ", desc = "quit without checking for change :q!" },
+  { "ZZ", desc = ":x - :wq" },
+  { "ZQ", desc = ":quit!" },
   { "ZR", desc = "restart [count]:restart+qall!" },
 
   { "zu", desc = "+Undo spelling commands" },
